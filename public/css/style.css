@@ -1,0 +1,35 @@
+body {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(51,50,143,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 25%;
+    background-color: #201f52;
+    border-radius: 10px;
+}
+
+h2 {
+    color: white;
+}
+
+#passwordGen {
+    background-color: #151430;
+    color: wheat;
+}
+
+#generate {
+    background-color: rgba(51,50,143,255);
+    color: white;
+    padding: 3px 28px;
+}
