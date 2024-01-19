@@ -16,34 +16,38 @@
             <input type="text" id="passwordGen" value="HIZAHGIDHBIBG6546">
             <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i>
         </div>
-        <div class ="passdiv">
-            <p>Password Lenght</p>
-            <input class ="value" type="number">
-        </div>
-        <div class="uppercase">
-            <p>Include uppercase letters</p>
-            <input type="checkbox" id = "thecheck"checked="checked">
+            
+                
+                
+                <div class ="passdiv">
+                    <p>Password Lenght</p>
+                    <input class ="value" id="ABC" type="number" max="20" min="1">
+                </div>
+                <div class="uppercase">
+                    <p>Include uppercase letters</p>
+                    <input type="checkbox" id = "thecheck"checked="checked">
 
-        </div>
-        
-        
-        <div class="lowercase">
-            <p>Include lowercase letters</p>
-            <input type="checkbox" checked="checked">
+                </div>
+                
+                
+                <div class="lowercase">
+                    <p>Include lowercase letters</p>
+                    <input type="checkbox" checked="checked">
 
-        </div>
-        <div class="numbers">
-            <p>Include numbers</p>
-            <input type="checkbox" checked="checked">
+                </div>
+                <div class="numbers">
+                    <p>Include numbers</p>
+                    <input type="checkbox" id="yesNumbers">
 
-        </div>
-        <div class="symbols">
-            <p>Include symbols</p>
-            <input type="checkbox" checked="checked">
+                </div>
+                <div class="symbols">
+                    <p>Include symbols</p>
+                    <input type="checkbox" id="yesSymbols" checked="checked">
 
-        </div>
-        <input type="button" value="Generate Password" id="generate">
-    </div>
+                </div>
+                <input type="button" value="Generate Password" id="generate">
+                
+    
 
     <script src="./public/js/main.js"></script>
 </body>

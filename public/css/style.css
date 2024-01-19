@@ -19,8 +19,25 @@ body {
     border-radius: 10px;
 }
 
+.secondary {
+    height: 40%;
+    width: 20%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+
+}
+
 h2 {
     color: white;
+}
+
+p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 #passwordGen {
@@ -31,29 +48,38 @@ h2 {
 .icondiv {
     display: flex;
     color: white;
+    gap: 10px;
 }
 .passdiv {
     display: flex;
     color: white;
+    gap: 10px;
+    justify-content: space-between;
 }
 .uppercase {
     display: flex;
     color: white;
+    gap: 20px;
+    justify-content: space-between;
+    
 }
 
 .lowercase {
     display: flex;
     color: white;
+    gap: 50px;
 }
 
 .numbers {
     display: flex;
     color: white;
+    gap: 100px;
 }
 
 .symbols {
     display: flex;
     color: white;
+    gap: 10px;
 }
 
 input {
@@ -62,6 +88,11 @@ input {
     
     
 }
+#ABC {
+    width:30px;
+    height: 20px;
+}
+
 
 
 #generate {
