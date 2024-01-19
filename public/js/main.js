@@ -21,27 +21,39 @@ console.log(pwdlength);
 let genPwd = () => {
     let includeNumbers = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let includeSymbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789!@#$%^&*()_+:?-=;,./";
+    let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+    
+    let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let onlyChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789!@#$%^&*()_+:?-=;,./";
     let pwdlength = lenghtFetch.value
     let pwd = "";
 
-    if (yesNumbers = true && yesSymbols == false) {
+    if (yesNumbers.checked == true && yesSymbols.checked == false) {
     for (let i = 0; i <= pwdlength; i++) {
         let randomNum = Math.floor(Math.random()*includeNumbers.length)
         pwd += includeNumbers.substring(randomNum,randomNum + 1 )
-        ThePassword.value = pwd
+        ThePassword.value = pwd 
         console.log(pwd);
     }
-    }else if (yesSymbols = true) {
+    }else if (yesSymbols.checked == true && yesNumbers.checked == true) {
         for (let i = 0; i <= pwdlength; i++) {
-            let randomNum = Math.floor(Math.random()*includeSymbols.length)
-            pwd += includeSymbols.substring(randomNum,randomNum + 1 )
+            let randomNum = Math.floor(Math.random()*chars.length)
+            pwd += chars.substring(randomNum,randomNum + 1 )
             ThePassword.value = pwd
             console.log(pwd);
 
-  }
-}
+       }
+   }else if (yesSymbols.checked == false && yesNumbers.checked == false) {
+    for (let i = 0; i <= pwdlength; i++) {
+        let randomNum = Math.floor(Math.random()*onlyChars.length)
+        pwd += onlyChars.substring(randomNum,randomNum + 1 )
+        ThePassword.value = pwd
+        console.log(pwd);
+
+   }
+    
+   }
 
 
     
@@ -50,4 +62,13 @@ let genPwd = () => {
 
 generation.addEventListener("click", () => {
     genPwd();
+    console.log(yesNumbers);
 })
+
+let clipIt = document.querySelector("i")
+
+clipIt.addEventListener("click", () => {
+    navigator.clipboard.writeText(ThePassword.value)
+
+        
+    } ) 

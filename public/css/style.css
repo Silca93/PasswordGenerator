@@ -5,6 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
 }
 
 
@@ -17,6 +18,10 @@ body {
     width: 25%;
     background-color: #201f52;
     border-radius: 10px;
+    z-index:0;
+    box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
 }
 
 .secondary {
@@ -30,12 +35,25 @@ body {
 
 }
 
+.fa-regular {
+    position: relative;
+    padding-top: 10px;
+    padding-left:5px;
+    cursor: pointer;
+    
+}
+
+
+
 h2 {
     color: white;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    font-size: 15px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -48,7 +66,13 @@ p {
 .icondiv {
     display: flex;
     color: white;
+    height: 40px;
+    width: 220px;
+    background-color: rgb(75, 75, 225);
     gap: 10px;
+    z-index: 2;
+    margin-bottom: 10px;
+
 }
 .passdiv {
     display: flex;
@@ -67,19 +91,19 @@ p {
 .lowercase {
     display: flex;
     color: white;
-    gap: 50px;
+    gap: 20px;
 }
 
 .numbers {
     display: flex;
     color: white;
-    gap: 100px;
+    gap: 20px;
 }
 
 .symbols {
     display: flex;
     color: white;
-    gap: 10px;
+    gap: 20px;
 }
 
 input {
@@ -89,6 +113,7 @@ input {
     
 }
 #ABC {
+    margin-top: 15px;
     width:30px;
     height: 20px;
 }
