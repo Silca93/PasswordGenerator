@@ -28,6 +28,42 @@ h2 {
     color: wheat;
 }
 
+.icondiv {
+    display: flex;
+    color: white;
+}
+.passdiv {
+    display: flex;
+    color: white;
+}
+.uppercase {
+    display: flex;
+    color: white;
+}
+
+.lowercase {
+    display: flex;
+    color: white;
+}
+
+.numbers {
+    display: flex;
+    color: white;
+}
+
+.symbols {
+    display: flex;
+    color: white;
+}
+
+input {
+    
+    accent-color: green;
+    
+    
+}
+
+
 #generate {
     background-color: rgba(51,50,143,255);
     color: white;
