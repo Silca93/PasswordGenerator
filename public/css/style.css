@@ -46,6 +46,7 @@ body {
 .value {
     font-size: large;
     width: 20px;
+    border-radius: 3px;
 }
 
 
@@ -112,7 +113,7 @@ p {
 
 input {
     
-    accent-color: green;
+    accent-color: rgb(136, 2, 141);
     
     
 }
