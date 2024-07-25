@@ -1,7 +1,7 @@
 body {
     width: 100dvw;
     height: 100dvh;
-    background-color: rgba(51,50,143,255);
+    background-color: rgba(51,50,100,255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,12 +15,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 60%;
-    width: 25%;
+    width: 400px;
     background-color: #201f52;
     border-radius: 10px;
     z-index:0;
     box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
--webkit-box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 13px rgba(231, 231, 231, 0.1);
 -moz-box-shadow: 2px 3px 24px 12px rgba(0,0,0,0.75);
 }
 
@@ -43,17 +43,21 @@ body {
     
 }
 
+.value {
+    font-size: large;
+    width: 20px;
+}
 
 
 h2 {
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -121,7 +125,22 @@ input {
 
 
 #generate {
+    margin-top: 50px;
     background-color: rgba(51,50,143,255);
     color: white;
-    padding: 3px 28px;
+    padding: 10px 28px;
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 300px;
+    }
+
+    .text {
+        font-size: 13px !important;
+    }
+    
+    .value {
+        width: 16px;
+    }
 }
