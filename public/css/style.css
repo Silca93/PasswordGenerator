@@ -28,8 +28,7 @@ body {
     height: 40%;
     width: 20%;
     display: flex;
-    justify-content: center ;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
     background-color: aliceblue;
 
@@ -70,6 +69,7 @@ p {
 
 .icondiv {
     display: flex;
+    
     color: white;
     height: 40px;
     width: 220px;
