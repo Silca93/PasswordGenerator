@@ -77,13 +77,23 @@ p {
     border-radius: 10px;
     color: white;
     height: 40px;
-    width: 220px;
+    width: 225px;
     background-color: rgb(136, 2, 141);
     gap: 10px;
     z-index: 2;
     margin-bottom: 10px;
 
 
+}
+
+.theicon {
+    width: 50px;
+    height: auto;
+    background-color: aquamarine !important;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .passdiv {
     display: flex;
