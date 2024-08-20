@@ -44,6 +44,7 @@ body {
 
 .value {
     font-size: large;
+    
     width: 20px;
     border-radius: 3px;
 }
@@ -88,8 +89,9 @@ p {
     display: flex;
     color: white;
     gap: 10px;
-    justify-content: space-between;
+  
     align-items: center;
+    justify-content: center;
 }
 .uppercase {
     display: flex;
@@ -132,9 +134,11 @@ input {
     
 }
 #ABC {
-    margin-top: 15px;
+    margin-top: 5px;
     width:30px;
     height: 20px;
+    display: flex;
+   
 }
 
 
