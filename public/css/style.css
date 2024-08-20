@@ -35,10 +35,11 @@ body {
 }
 
 .fa-regular {
-    position: relative;
-    padding-top: 10px;
-    padding-left:5px;
+
+
     cursor: pointer;
+    
+
     
 }
 
@@ -77,23 +78,30 @@ p {
     border-radius: 10px;
     color: white;
     height: 40px;
-    width: 225px;
-    background-color: rgb(136, 2, 141);
-    gap: 10px;
+    width: 250px;
     z-index: 2;
     margin-bottom: 10px;
+    margin-left: 20px;
 
 
 }
 
+/* .fa-regular {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-right: 4px;
+} */
+
 .theicon {
     width: 50px;
-    height: auto;
-    background-color: aquamarine !important;
-    z-index: 40;
+    height: 40px;
+    background-color: rgb(136, 2, 141) ;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .passdiv {
     display: flex;
