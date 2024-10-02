@@ -133,13 +133,18 @@ p {
     display: flex;
     gap: 55px;
     color: white;
-   
-   
-   
-  
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width:600px) {
+    .passdiv {
+        gap:70px;
+    }
+}  
+  
+
+
 .uppercase {
     display: flex;
     color: white;
@@ -181,10 +186,24 @@ p {
     margin-right: -5px;
  
 }
+
+@media (max-width:600px) {
+    .numberSlider {
+        margin-right: 0px;
+    }
+}
+
 .symbolSlider {
     margin-right: -5px;
  
 }
+
+@media (max-width:600px) {
+    .symbolSlider {
+        margin-right: 0px;
+    }
+}
+
 
 input {
     
