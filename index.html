@@ -16,44 +16,54 @@
                 <i class="fa-regular fa-clipboard" style="color: #ffffff;"></i>
             </div>
         </div>
-        <div class="passdiv">
-            <p class="text">Password Length</p>
-            <input class="value" id="ABC" type="number" max="20" min="1">
+
+        <div class="container">
+
+                <div class="passdiv">
+                    <p class="text">Password Length</p>
+                    <input class="value" id="ABC" type="number" max="20" min="1">
+                </div>
+                <div class="uppercase">
+                    <p class="text">Include uppercase letters</p>
+                    <!-- <input class="value" type="checkbox" id="uppercase" checked="checked"> -->
+                    <label class="switch">
+                        <input type="checkbox" id="uppercase" checked="checked">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="lowercase">
+                    <p class="text">Include lowercase letters</p>
+                    <!-- <input class="value" type="checkbox" id="lowercase" checked="checked"> -->
+                    <label class="switch">
+                        <input type="checkbox" id="lowercase" checked="checked">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="numbers">
+                    <p class="text">Include numbers</p>
+                    <!-- <input class="value" type="checkbox" id="yesNumbers" unchecked="checked"> -->
+                    <div class="numberSlider">
+                        <label class="switch">
+                            <input type="checkbox" id="yesNumbers" >
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="symbols">
+                    <p class="text">Include symbols</p>
+                    <!-- <input class="value" type="checkbox" id="yesSymbols" unchecked="unchecked"> -->
+                    <div class="symbolSlider">
+
+                        <label class="switch">
+                            <input type="checkbox" id="yesSymbols">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <input class="" type="button" value="Generate Password" id="generate">
+            </div>
         </div>
-        <div class="uppercase">
-            <p class="text">Include uppercase letters</p>
-            <!-- <input class="value" type="checkbox" id="uppercase" checked="checked"> -->
-            <label class="switch">
-                <input type="checkbox" id="uppercase" checked="checked">
-                <span class="slider"></span>
-            </label>
-        </div>
-        <div class="lowercase">
-            <p class="text">Include lowercase letters</p>
-            <!-- <input class="value" type="checkbox" id="lowercase" checked="checked"> -->
-            <label class="switch">
-                <input type="checkbox" id="lowercase" checked="checked">
-                <span class="slider"></span>
-            </label>
-        </div>
-        <div class="numbers">
-            <p class="text">Include numbers</p>
-            <!-- <input class="value" type="checkbox" id="yesNumbers" unchecked="checked"> -->
-            <label class="switch">
-                <input type="checkbox" id="yesNumbers" >
-                <span class="slider"></span>
-            </label>
-        </div>
-        <div class="symbols">
-            <p class="text">Include symbols</p>
-            <!-- <input class="value" type="checkbox" id="yesSymbols" unchecked="unchecked"> -->
-            <label class="switch">
-                <input type="checkbox" id="yesSymbols" >
-                <span class="slider"></span>
-            </label>
-        </div>
-        <input class="" type="button" value="Generate Password" id="generate">
-    </div>
     <script src="./public/js/main.js"></script>
+        
 </body>
 </html>
